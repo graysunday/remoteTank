@@ -43,7 +43,7 @@ void loop() {
 		radio.read(&xSpeed, sizeof(xSpeed));
 		radio.read(&ySpeed, sizeof(ySpeed));
 		radio.read(&button, sizeof(button));
-		/*
+		
 		Serial.print("  ");
 		Serial.print(" Direction= ");
 		Serial.print(Direction);
@@ -54,7 +54,7 @@ void loop() {
 		Serial.print(" button = ");
 		Serial.print(button);
 		Serial.println("  ");
-		*/
+		
 		driver.dualWheelOutput(Direction, xSpeed, ySpeed);
 	}
 }

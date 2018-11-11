@@ -22,7 +22,7 @@ void loop() {
 
 	int xPin = 1; /* analog */
 	int yPin = 0; /* analog */
-	int bPin = 10; /* digital */
+	int bPin = 3; /* digital */
 
 	Joystick joystick(xPin, yPin, bPin); /* joystick pin No. */
 
